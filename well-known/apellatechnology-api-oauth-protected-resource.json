@@ -1,0 +1,1 @@
+{"resource":"https://api.apella.io/mcp","authorization_servers":["https://api.apella.io"],"scopes_supported":["openid","profile","email","offline_access"],"bearer_methods_supported":["header"]}

@@ -1,23 +1,82 @@
 aid: apellatechnology
+
 name: Apellatechnology
-description: 'Apellatechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://apella.io/og?title=Apella+%7C+Ambient+AI+for+the+Operating+Room&subtitle=Transform+your+OR+with+Apella%E2%80%99s+AI-powered+surgical+operations+platform
+
+description: 'Apellatechnology, operating under the brand Apella, provides ambient AI solutions for operating rooms, optimizing surgical capacity, reducing delays, and improving turnover efficiency. Their platform integrates with EHR systems to deliver real-time analytics, predictive case duration, and resource optimization for hospitals and surgical teams.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apellatechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: API spec at https://api.apella.io/openapi.json requires authentication (401)
+  evidence:
+    - url: https://api.apella.io/openapi.json
+      status: 401
+  checked: 2026-09-25
+
 tags:
 - Company
-apis: []
+- Healthcare
+- AI
+- Surgery
+- Operations
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: security/apellatechnology-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/apellatechnology-llms.txt
+- type: SecurityTxt
+  url: well-known/apellatechnology-security.txt
+- type: WellKnown
+  url: well-known/apellatechnology-well-known.yml
+- type: Hosts
+  url: hosts/apellatechnology-hosts.yml
+- type: Vendors
+  url: vendors/apellatechnology-vendors.yml
+- type: TrustCenter
+  url: https://trust.apella.io/
+- type: TermsOfService
+  url: https://apella.io/terms
+- type: StatusPage
+  url: https://status.apella.io
+- type: PrivacyPolicy
+  url: https://apella.io/privacy
+- type: Blog
+  url: https://apella.io/blog
+- type: VulnerabilityDisclosure
+  url: security/apellatechnology-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/apellatechnology-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/apellatechnology
+  url: https://apella.io
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

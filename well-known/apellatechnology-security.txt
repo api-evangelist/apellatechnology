@@ -1,0 +1,4 @@
+Contact: mailto:security@apella.io
+Expires: 2027-09-25T19:59:19.666Z
+Canonical: https://apella.io/.well-known/security.txt
+Preferred-Languages: en
