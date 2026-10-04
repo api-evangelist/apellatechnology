@@ -33,6 +33,11 @@ x-coverage:
 tags:
 - Company
 - Healthcare
+- Artificial Intelligence
+- Surgery
+tags_raw:
+- Company
+- Healthcare
 - AI
 - Surgery
 - Operations
